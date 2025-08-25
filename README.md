@@ -6,11 +6,17 @@ Bu web uygulaması, kullanıcının boy ve kilosuna göre **Vücut Kitle İndeks
 
 ## 📷 Ekran Görüntüleri
 
-Ana Sayfa (BMI Hesaplama)  
-![Ana Sayfa](./Assets/screenshots/home.png)
+Ana Sayfa  
+![Ana Sayfa](https://github.com/byzakeskin/BMI-Calculator/blob/main/ana%20sayfa.png)
+
+Hesaplayıcı   
+![Hesaplayıcı](https://github.com/byzakeskin/BMI-Calculator/blob/main/calculator.png)
+
+Modal 
+![Modal](https://github.com/byzakeskin/BMI-Calculator/blob/main/modal.png)
 
 Bilgi Sayfası (What is BMI?)  
-![Bilgi Sayfası](./Assets/screenshots/info.png)
+![Bilgi Sayfası](https://github.com/byzakeskin/BMI-Calculator/blob/main/what%20is%20bm%C4%B1.png)
 
 ---
 

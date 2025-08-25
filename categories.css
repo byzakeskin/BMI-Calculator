@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header {
+    background-color: black;
+    color: beige;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;                
+    justify-content: space-between; /* h1 sola, buton sağa */
+    align-items: center; 
+    padding: 0 20px; /* iç boşluk (sağ-sol) */
+}
+
+.header h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-family: "Fredoka", sans-serif;
+    line-height: 80px; /* yazıyı dikeyde ortalamak için */
+}
+
+.back-button {
+    color: beige;
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.description {
+    text-align: center;
+    margin: 150px auto 40px auto; 
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.bmi-table {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bmi-table th, .bmi-table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.bmi-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.bmi-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.description-end {
+    text-align: center;
+    margin: 200px auto 100px auto;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.footer {
+  background: #000;          
+  color: beige;              
+  text-align: center;        
+  padding: 20px;             
+  margin-top: 40px;          
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Mobil Uyum - 768px ve altı ekranlar için */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 22px;
+        padding-left: 0;
+        line-height: 1.5;
+    }
+
+    .back-button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .description,
+    .description-end {
+        margin: 120px 20px 40px 20px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .description-end {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .bmi-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-table th {
+        font-size: 1rem;
+    }
+
+    ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}

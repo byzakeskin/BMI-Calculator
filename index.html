@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>BMI Calculator</h1>
+    </header>
+    
+    <div class="image-container">
+        <img src="./Assets/images/limitless.jpg" alt="Renkli sisler içinde, koşuya hazırlanan bir sporcu ve önünde 'LIMITLESS' yazısı.">
+    </div>
+
+    <div class="description">
+        <p>
+            Body Mass Index (BMI) is a simple calculation using a person's height and weight. 
+            The formula is BMI = kg/m² where kg is a person's weight in kilograms and m² is their height in meters squared. 
+            A high BMI can indicate high body fatness, while a low BMI can indicate low body fatness. 
+            However, BMI does not directly measure body fat, so it is possible to have a high BMI but not be overweight or obese. 
+            Are you curious about your own BMI result? Calculate now!
+        </p>
+    </div>
+
+    <div class="scroll-button">
+        <a href="#bmi-form">🡫</a>
+    </div>
+
+<div class="wrapper">
+  <div id="bmi-form">
+    <form id="form">
+      <!-- Height -->
+      <label for="height">Height:</label>
+      <div class="input-with-select">
+        <input type="number" id="height" name="height" required>
+        <select id="height-unit">
+          <option value="cm">cm</option>
+          <option value="ft">feet</option>
+        </select>
+      </div>
+
+      <!-- Weight -->
+      <label for="weight">Weight:</label>
+      <div class="input-with-select">
+        <input type="number" id="weight" name="weight" step="0.1" required>
+        <select id="weight-unit">
+          <option value="kg">kg</option>
+          <option value="lb">pounds</option>
+        </select>
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+  </div>
+
+  <img class="image-floating" src="./Assets/images/img.png" alt="Spor Yapan Kadın">
+</div>
+
+    <div id="bmi-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="bmi-result"></p>
+        <button id="learn-more-btn">Learn More</button>
+    </div>
+    </div>
+
+
+
+    <footer class="footer">
+    <p>© 2025 All Rights Reserved | Beyza Nur Keskin</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
